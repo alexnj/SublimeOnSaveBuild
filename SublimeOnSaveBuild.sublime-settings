@@ -1,3 +1,4 @@
 {
-    "filename_filter": "(css|js|sass|less)$"
+    "filename_filter": "\\.(css|js|sass|less|scss)$",
+    "build_on_save": 1
 }

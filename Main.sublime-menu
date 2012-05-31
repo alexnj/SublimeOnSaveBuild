@@ -35,7 +35,6 @@
                                 "command": "open_file_settings",
                                 "caption": "Settings – Syntax Specific – User"
                             },
-                            { "caption": "-" }
                         ]
                     }
                 ]

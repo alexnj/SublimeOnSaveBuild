@@ -5,7 +5,7 @@ import re
 
 class SublimeOnSaveBuild(sublime_plugin.EventListener):
     def on_post_save(self, view):
-        global_settings = sublime.load_settings(__name__ + '.sublime-settings')
+        global_settings = sublime.load_settings(self.__class__.__name__+'.sublime-settings')
 
         # See if we should build. A project level build_on_save setting
         # takes precedence. To be backward compatible, we assume the global

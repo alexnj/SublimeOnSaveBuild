@@ -13,7 +13,7 @@ class SublimeOnSaveBuild(sublime_plugin.EventListener):
         should_build = view.settings().get('build_on_save', global_settings.get('build_on_save', True))
 
         # Load filename filter. Again, a project level setting takes precedence.
-        filename_filter = view.settings().get('filename_filter', global_settings.get('filename_filter', '*'))
+        filename_filter = view.settings().get('filename_filter', global_settings.get('filename_filter', '.*'))
 
         if not should_build:
             return
